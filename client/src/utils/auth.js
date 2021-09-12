@@ -1,4 +1,3 @@
-import { getDirectiveNames } from '@apollo/client/utilities';
 import decode from 'jwt-decode';
 
 class AuthService {
@@ -31,7 +30,7 @@ class AuthService {
     // Retrieve token from localStorage
     getToken() {
         // Retrieves the user token from localStorage
-        return localStorage/getDirectiveNames('id_token');
+        return localStorage.getItem('id_token');
     }
 
     // Set token to localStorage and reload page to homepage
